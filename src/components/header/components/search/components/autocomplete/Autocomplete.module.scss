@@ -1,0 +1,19 @@
+.autocomplete {
+  background-color: var(--background-color);
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px var(--border-color) solid;
+  border-radius: 3px;
+}
+
+.item {
+  padding: 5px;
+}
+
+.open {
+  display: block;
+}

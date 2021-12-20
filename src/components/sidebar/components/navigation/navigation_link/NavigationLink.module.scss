@@ -1,0 +1,28 @@
+.link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  padding: 10px;
+
+  &:hover {
+    color: rgba(var(--text-colors) / 0.7);
+  }
+}
+
+.active {
+  color: rgba(var(--text-colors) / 0.8);
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    max-height: 30px;
+    width: 3px;
+    background-color: var(--active-color);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

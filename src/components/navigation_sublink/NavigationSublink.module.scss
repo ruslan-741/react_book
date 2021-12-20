@@ -1,0 +1,27 @@
+.sublink {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--text-color);
+  padding-left: 15px;
+
+  &:hover {
+    color: rgba(var(--text-colors) / 0.8);
+  }
+}
+
+.active {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background-color: var(--active-color);
+  }
+}

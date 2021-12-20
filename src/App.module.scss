@@ -1,0 +1,31 @@
+.app {
+  --background-color: rgb(255 255 255);
+  --header-background-color: rgb(45 48 50);
+  --text-colors: 0 0 0;
+  --header-height: 50px;
+  --active-color: rgb(77 193 228);
+  --border-colors: 0 0 0;
+}
+
+.dark-theme {
+  --header-background-color: rgb(45 48 50);
+  --background-color: rgb(32 32 32);
+  --text-colors: 255 255 255;
+  --border-colors: 255 255 255;
+}
+
+.app {
+  --text-color: rgb(var(--text-colors));
+  --border-color: rgba(var(--border-colors) / 0.3);
+}
+
+.app {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 600vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  padding-top: var(--header-height);
+}

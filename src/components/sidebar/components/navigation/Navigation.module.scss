@@ -1,0 +1,13 @@
+.navigation {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sublinks {
+  overflow: hidden;
+  max-height: 0;
+}
+
+.sublinks-active {
+  max-height: 100000px;
+}
